@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exchange Program.</h1>
+    <input type="number" id="amount"/>
+    
+    <!-- <div id="resultArea">Result is here</div> -->
+    
+
+    <form action="/action_page.php">
+        <label for="Currency">Choose a currency</label>
+        <select name="currencyType" id="fromCurrencyList">
+          <option value="vnd">VND</option>
+          <option value="usd">USD</option>
+          <option value="eur">EUR</option>
+          <option value="krw">KRW</option>
+        </select>
+        <br><br>
+        
+        
+        <form action="" id="toCurrencyList">
+            <input type="radio" name="toCurrency" value="vnd"> VND<br>
+            <input type="radio" name="toCurrency" value="usd"> USD<br>
+            <input type="radio" name="toCurrency" value="eur"> EUR<br>
+            <input type="radio" name="toCurrency" value="krw"> KRW
+          </form>
+
+      </form>
+
+      <button id="convertButton" >Convert!</button>
+      <span id="result">
+      </span>
+    <script src="main.js"></script>
+</body>
+</html>
